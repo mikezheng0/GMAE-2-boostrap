@@ -255,7 +255,9 @@
                     </div>
                 </div>
                 <!--End clients Tab-->
-                <div id="new-client-tab" class="container-fluid tab-pane fade">
+
+                <!--New Clients Page-->
+                <div id="new-client-tab" class="container-fluid header-container tab-pane fade">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 main">
                             <div class="tab-content">
@@ -264,13 +266,13 @@
                                         <div class="row">
                                             <div class="col-xs-4 header-left-icons">
                                                 <button type="button" class="btn" aria-label="Add Client">
-                                                    <span class="glyphicon glyphicon-ok-sign" aria-hidden="false"></span>
+                                                    <span class="glyphicon glyphicon-ok-sign" data-toggle="tab" href="#clients-list-tab" aria-hidden="false"></span>
                                                 </button>
                                             </div>
                                             <div class="col-xs-4 header-title">Add Client</div>
                                             <div class="col-xs-4 header-right-icons">
                                                 <button type="button" class="btn" aria-label="Search Clients">
-                                                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="false"></span>
+                                                    <span class="glyphicon glyphicon-remove-sign" data-toggle="tab" href="#clients-list-tab" aria-hidden="false"></span>
                                                 </button>
                                             </div>
                                         </div>
@@ -280,9 +282,8 @@
                         </div>
                     </div>
                 </div>
-                <!--New Clients Page-->
-
                 <!--end of New Clients Page-->
+
                 <!--Account settings Tab-->
                 <div id="account-settings-tab" class="container-fluid tab-pane fade">
                     <div class="row">
