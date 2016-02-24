@@ -1,0 +1,184 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app, html, body{
+    text-align:center;
+    height:100%;
+    padding: 0;
+    overflow: scroll;
+}
+.header{
+    padding: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 0 22px 0 rgba(0,0,0,0.67);
+    -moz-box-shadow: 0 0 22px 0 rgba(0,0,0,0.67);
+    box-shadow: 0 0 22px 0 rgba(0,0,0,0.67);
+}
+.tab-pane h1, .sidebar h1 {
+    margin: 0px;
+    line-height: 50px;
+    font-size:12px;
+}
+.bold-font{
+    font-weight:bold;
+}
+.main{
+    padding:0px 0px 50px 0px;
+}
+
+
+/*All headers*/
+.header-container{
+    line-height:50px;
+}
+.header-title{
+
+}
+.header-left-icons{
+    text-align: left;
+}
+.header-right-icons{
+    text-align: right;
+}
+.header-title h1{
+    width: 100%;
+}
+.tab-nav-header{
+    margin-bottom:0px;
+}
+
+/*footer*/
+.footer ul{
+    width:100%;
+}
+.footer li{
+    width:20%;
+}
+.footer .container{
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+/*Assessment*/
+.assessment-item table{
+    margin:auto;
+}
+
+/*table forms*/
+.table-left{
+    text-align: right;
+    padding-right: 5px;
+    font-weight:bold;
+}
+.table-right{
+    text-align: left;
+
+}
+.table-center{
+    text-align: center;
+}
+
+/*Clients Table*/
+.client-info table{
+    margin:auto;
+}
+.client-info-table-left{
+    width:50%;
+    font-weight:bold;
+    padding-right:10px;
+    text-align:right;
+}
+.client-info-table-right{
+    text-align:left;
+}
+
+/*Portrait tablet+ versions*/
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 50px;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 0px;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        border-right: 1px solid lightgrey;
+    }
+
+    .sidebar li {
+        border-bottom: 1px solid lightgrey;
+    }
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .header img {
+        display: none;
+    }
+
+    .nav-tabs > li > a {
+        padding: 15px 0;
+    }
+}
+
+/*Phone Sidebar*/
+.sidebar{
+    padding:0px;
+}
+
+/*Modals in app*/
+/*All Modals*/
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*export-user modal*/
+#export-users .modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+#export-users .modal-body p{
+    font-size:12px;
+}
+#export-users .modal-body .btn-group,#export-users .modal-body .btn-group .list-group-item {
+    width:100%;
+}
+/*add-new-assessment modal*/
+#add-new-assessment .modal-body table{
+    margin:auto;
+    font-size:14px;
+}
+#add-new-assessment .modal-body table td{
+    padding:10px;
+}
